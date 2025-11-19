@@ -56,5 +56,5 @@ class Stack():
         """
         score : int = 0
         while not self.IsEmpty():
-            score += self.unpile()
+            score += self.ToUnStack()
         return score
