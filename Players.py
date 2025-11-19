@@ -19,7 +19,7 @@ class JoueurC:
         for _ in range(5):
             if button_a.was_pressed():
                 compteur += 1
-                display.show(Actions[Matching[compteur]["Shape"]])
+                display.show(Actions[Matching[compteur]]["Shape"])
                 sleep((2000))
             elif button_b.was_pressed():
                 display.clear()
