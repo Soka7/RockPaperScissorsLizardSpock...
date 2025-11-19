@@ -16,13 +16,13 @@ class JoueurC:
 
     def Play(self):
         compteur = 0
-        for _ in range(5):
+        while True:
             if button_a.was_pressed():
-                compteur += 1
+                compteur = (compteur + 1) % 5 #Thx to Yolked.
                 display.show(Actions[Matching[compteur]]["Shape"])
                 sleep((2000))
             elif button_b.was_pressed():
                 display.clear()
                 break
-        radio.send(f"Player one played:{Matching[compteur]}")
+            radio.send(f"Player one played:{Matching[compteur]}")
         self.Memory.ToStack(compteur)
