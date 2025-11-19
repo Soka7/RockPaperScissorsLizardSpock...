@@ -16,10 +16,11 @@ class JoueurC:
 
     def Play(self):
         compteur = 0
+        display.show(Actions[Matching[compteur]])
         for _ in range(5):
             if button_a.was_pressed():
                 compteur += 1
-                display.show(Actions["?"])
+                display.show(Actions[Matching[compteur]])
                 sleep((2000))
             elif button_b.was_pressed():
                 display.clear()
