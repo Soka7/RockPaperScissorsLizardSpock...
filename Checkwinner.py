@@ -28,6 +28,6 @@ def CheckWinner(action1, action2 ):
             return "1: Won !"
     for weaknesses in Actions[action1]["Lose"]:
         if action2 == weaknesses:
-            return "2: Won"
+            return "2: Won !"
         
     return -1

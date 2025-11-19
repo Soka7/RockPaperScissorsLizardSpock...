@@ -1,4 +1,4 @@
-class Pile():   
+class Stack(): 
     def __init__(self) -> None:
         """
         Create the stack.
@@ -7,7 +7,7 @@ class Pile():
         self._size : int = 0
         return None
     
-    def empile(self, value) -> None:
+    def ToStack(self, value) -> None:
         """
         Add an element at the top of the stack.
         """
@@ -15,7 +15,7 @@ class Pile():
         self._size += 1
         return None
     
-    def unpile(self):
+    def ToUnStack(self):
         """
         Delete and return the last element of the stack.
         Return -1 if the stack is empty.
