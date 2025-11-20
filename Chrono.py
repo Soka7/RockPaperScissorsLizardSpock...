@@ -27,7 +27,11 @@ class Chrono:
         print(f"Waiting {Time} seconds.")
         self.StopTime(Time)
         return True
+    
+    def LauchTimer(self, Time):
+        Thread = th.Thread(target = self.SetTimer, args = [Time])
+        Thread.start()
         
 Chrono1 = Chrono()
-
-Thread = th.Thread(target = Chrono1.SetTimer(2000, True))
+Chrono1.LauchTimer(20)
+print(Chrono1.Signal)
