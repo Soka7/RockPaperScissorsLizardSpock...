@@ -5,14 +5,16 @@ from StackFile import Stack
 from GameData import Matching
 
 class JoueurC:
-    def __init__(self, nom):
+    def __init__(self, nom, Await, Num):
         self.nom = nom
         self.Memory = Stack()
+        self.Await = Await
+        self.Num = Num
 
     def GetCall(self):
         display.scroll(str("Press A to respond the call"))
         if button_a.was_pressed():
-            radio.send(str("Ready for battle"))
+            radio.send(str(f"Ready for battle J{self.Num}"))
 
     def Play(self):
         compteur = 0

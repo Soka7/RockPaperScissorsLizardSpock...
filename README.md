@@ -7,7 +7,7 @@
 
 A Micro:bit project.
 
-**Developed by [Soka7](https://github.com/Soka7), [Yolked64](https://github.com/Yolked64)**
+**Developed by [Soka7](https://github.com/Soka7), [Yolked64](https://github.com/Yolked64), [PouletDansKFC](https://github.com/PouletDansKFC)**
 
 ## ✨Features
 
