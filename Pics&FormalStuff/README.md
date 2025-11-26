@@ -16,6 +16,8 @@ A Micro:bit project.
 Language: English
 PascalCase
 
+After having rushed the whole thing we just hit a wall. Therefore we started all over again focusing on comprehending the card's logic and the basics. This experience teached us to take our time to build a home on healthy foundations.
+
 ### Basics
 ```bash
 # Install requirements
