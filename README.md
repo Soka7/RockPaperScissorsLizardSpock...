@@ -1,9 +1,7 @@
-![Spoke](PasTéléchargé.jpeg)
+![Spock](PasTéléchargé.jpeg)
 
-# Tic-Tac-Toe____Im-dislexic
+# RockPaperScissorsLizardSpock...
 **TermD Mp**
-
-# SVP MR DALDEGAN DONNEZ NOUS DU TRAVAIL ![SDF](téléchargé.jpeg)
 
 A Micro:bit project.
 
@@ -17,6 +15,8 @@ A Micro:bit project.
 
 Language: English
 PascalCase
+
+After having rushed the whole thing we just hit a wall. Therefore we started all over again focusing on comprehending the card's logic and the basics. This experience teached us to take our time to build a home on healthy foundations.
 
 ### Basics
 ```bash
