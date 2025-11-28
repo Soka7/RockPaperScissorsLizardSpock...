@@ -5,8 +5,9 @@ from GameData import Matching
 import music
 
 class JoueurC:
-    def __init__(self, nom):
+    def __init__(self, nom, num = None):
         self.nom = nom
+        self.num = num
 
     def GetCall(self):
         while True:
@@ -27,4 +28,5 @@ class JoueurC:
                 display.clear()
                 break
         ToSend = str(Matching[compteur])
-        radio.send("Player one played: " + ToSend)
+        radio.send("Played: " + ToSend + str(self.num))
+        display.scroll(str("Played: " + ToSend + str(self.num)))
