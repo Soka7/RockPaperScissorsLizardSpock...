@@ -16,9 +16,7 @@ while True:
         incoming = radio.receive()
         if incoming:
             display.scroll(incoming)
-            if incoming == "Call":
-                Joueur.GetCall()
-            elif incoming == "Fight !":
+            if incoming == "Fight !":
                 display.scroll(incoming)
                 Joueur.Play()
         display.clear()

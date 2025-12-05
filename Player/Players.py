@@ -28,5 +28,5 @@ class JoueurC:
                 display.clear()
                 break
         ToSend = str(Matching[compteur])
-        radio.send("Played: " + ToSend + str(self.num))
-        display.scroll(str("Played: " + ToSend + str(self.num)))
+        radio.send(ToSend + str(self.num))
+        display.scroll(str(ToSend + str(self.num)))
