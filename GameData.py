@@ -5,14 +5,14 @@ from microbit import *
 # It also contains the weaknesse and advantages of each action.
 
 Actions : dict = {
-    "Rock" : {
+    "Rock_" : {
         "Shape" : Image("00000:"
                         "09990:"
                         "09990:"
                         "09990:"
                         "00000"),
-        "Name" : "Rock",
-        "Win" : ["Lizard", "Scissors"],
+        "Name" : "Rock_",
+        "Win" : ["Lizar", "Sciss"],
         "Lose" : ["Paper", "Spock"],
     },
     "Paper" : {
@@ -22,28 +22,28 @@ Actions : dict = {
                         "99999:"
                         "00000"),
         "Name" : "Paper",
-        "Win" : ["Rock", "Spock"],
-        "Lose" : ["Scissors", "Lizard"],
+        "Win" : ["Rock_", "Spock"],
+        "Lose" : ["Sciss", "Lizard"],
     },
-    "Scissors" : {
+    "Sciss" : {
         "Shape" : Image("99009:"
                         "99090:"
                         "00900:"
                         "99090:"
                         "99009"),
-        "Name" : "Scissors",
+        "Name" : "Sciss",
         "Win" : ["Paper", "Lizard"],
-        "Lose" : ["Spock", "Rock"],
+        "Lose" : ["Spock", "Rock_"],
     },
-    "Lizard" : {
+    "Lizar" : {
         "Shape" : Image("00900:"
                         "99099:"
                         "09090:"
                         "99099:"
                         "00900"),
-        "Name" : "Lizard",
+        "Name" : "Lizar",
         "Win" : ["Paper", "Spock"],
-        "Lose" : ["Scissors", "Rock"],
+        "Lose" : ["Sciss", "Rock_"],
     },
     "Spock" : {
         "Shape" : Image("00999:"
@@ -52,23 +52,15 @@ Actions : dict = {
                         "09999:"
                         "00999"),
         "Name" : "Spock",
-        "Win" : ["Rock", "Scissors"],
-        "Lose" : ["Paper", "Lizard"],
+        "Win" : ["Rock_", "Sciss"],
+        "Lose" : ["Paper", "Lizar"],
     },
-
-    "?": {
-        "09990:"
-        "00009:"
-        "00990:"
-        "00000:"
-        "00900:"
-    }
 }
 
 Matching = {
-    0:"Lizard",
+    0:"Lizar",
     1:"Spock",
-    2:"Scissors",
+    2:"Sciss",
     3:"Paper",
-    4:"Rock"
+    4:"Rock_"
 }

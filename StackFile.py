@@ -1,4 +1,4 @@
-class Stack(): 
+class Stack():
     def __init__(self) -> None:
         """
         Create the stack.
@@ -6,7 +6,7 @@ class Stack():
         self._stack : list = []
         self._size : int = 0
         return None
-    
+
     def ToStack(self, value) -> None:
         """
         Add an element at the top of the stack.
@@ -14,7 +14,7 @@ class Stack():
         self._stack += [value]
         self._size += 1
         return None
-    
+
     def ToUnStack(self):
         """
         Delete and return the last element of the stack.
@@ -22,13 +22,13 @@ class Stack():
         """
         if self.IsEmpty():
             return -1
-        
+
         self._size -= 1
         value = self._stack[-1]
         del self._stack[-1]
 
         return value
-    
+
     def IsEmpty(self) -> bool:
         """
         Check if the stack is empty, True if it is and False if it isn't.
@@ -37,7 +37,7 @@ class Stack():
             return True
         else:
             return False
-    
+
     def GetSize(self) -> int:
         """
         Return the size of the stack.
@@ -49,7 +49,7 @@ class Stack():
         Return the stack as a list.
         """
         return self._stack
-    
+
     def CountScore(self) -> int:
         """
         To the sum of all the integers of the stack and return it.
